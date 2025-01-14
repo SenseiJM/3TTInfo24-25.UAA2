@@ -1,0 +1,13 @@
+Ecrire() --> Affiche qqch
+Lire() --> Récupérer 1 info
+Lire(param)
+    infoUtilisateur --> param 
+Concaténation
+"nom"+"prenom" = nomprenom
+"nom"+" "+"prenom" = nom prenom
+
+1) Demander le prenom de l'utilisateur
+2) Stocker l'info dans une variable "prenom"
+3)Demander le nom de l'utilisateur
+4) Stocker l'info dans une variable "nom"
+5) Afficher "Bonjour" + le nom et prénom

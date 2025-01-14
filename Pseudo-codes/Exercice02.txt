@@ -1,0 +1,11 @@
+Algorithme Exercice02
+
+Variable prenom, nom : Chaine
+
+DEBUT
+    Ecrire("Quel est votre prénom ?")
+    Lire(prenom)
+    Ecrire("Quel est votre nom ?")
+    Lire(nom)
+    Ecrire("Bonjour " + nom + " " + prenom)
+FIN

@@ -1,0 +1,19 @@
+5 variables : Entier
+a = 8 Modulo 3
+b = 4 + a
+c = b * a
+d = (c - a) * b
+e = ((a + 7) * (d /entiere a)) * 0
+
+Ecrire les lignes 2 à 6 en pseudo-code
+//Ecire la valeur de chaque variable dans un commentaire après le pseudo-code
+
+Algorithme []
+Variable [] : []
+DEBUT
+    a []
+    b []
+    [...]
+FIN
+//a vaut []
+//b vaut []

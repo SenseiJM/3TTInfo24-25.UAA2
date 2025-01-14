@@ -1,0 +1,11 @@
+Algorithme Exercice01
+
+Variable a, b, c : Entier
+
+DEBUT
+    a <-- 5
+    b <-- 7
+    c <-- a
+    a <-- b
+    b <-- c
+FIN

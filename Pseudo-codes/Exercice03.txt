@@ -1,0 +1,17 @@
+Algorithme Exercice03
+
+Variable a, b, c, d, e : Entier
+
+DEBUT
+    a <-- 8 MOD 3
+    b <-- 4 + a
+    c <-- b * a
+    d <-- (c - a) * b
+    e <-- ((a + 7) * (d DIV a)) * 0
+FIN
+
+//a vaut 2
+//b vaut 6
+//c vaut 12
+//d vaut 60
+//e vaut 0
