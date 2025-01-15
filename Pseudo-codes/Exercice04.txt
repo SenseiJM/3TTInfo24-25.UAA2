@@ -1,0 +1,16 @@
+Algorithme Exercice04
+
+Variable nombre1, nombre2 : Entier
+
+DEBUT
+    Ecrire("Entrer un nombre pour la première valeur :")
+    Lire(nombre1) //Imaginons que nombre1 vaut 8
+    Ecrire("Entrer un nombre pour la deuxième valeur :")
+    Lire(nombre2) //Imaginons que nombre2 vaut 2
+
+    nombre1 <-- nombre1 + nombre2 //nombre1 = 8 + 2 = 10
+    nombre2	<-- nombre1 - nombre2 //nombre2 = 10 - 2 = 8
+    nombre1 <-- nombre1 - nombre2 //nombre1 = 10 - 8 = 2
+    
+    Ecrire("Le premier nombre vaut maintenant " + nombre1 + " et le deuxième vaut maintenant " + nombre2 + ".")
+FIN

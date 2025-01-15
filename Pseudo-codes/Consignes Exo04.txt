@@ -1,0 +1,4 @@
+Créer un algorithme qui intervertit les valeurs de deux variables numériques sans passer par une troisième variable
+Vous aurez deux variables : nombre1 et nombre2
+Les valeurs des deux variables seront données par l'utilisateur
+Annoncez les nouvelles valeurs une fois interverties grâce à un message affiché à l'écran
