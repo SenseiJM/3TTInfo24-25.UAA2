@@ -1,0 +1,4 @@
+Demander un nombre en secondes à l'utilisateur
+Stocker le nombre
+Écrire un programme qui convertir le nombre en secondes en Jours, Heures, Minutes et secondes
+Afficher secondesLues + secondes valent x jours, y heures, z minutes et g secondes.
