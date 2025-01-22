@@ -1,0 +1,12 @@
+Algorithme Exercice1.1
+
+Variable nombre : Entier
+Variable texte : Chaine
+Variable caractere : Caractère
+
+DEBUT
+    nombre <-- 42
+    texte <-- "test"
+    caractere <-- 'f'
+    Ecrire(nombre, texte, caractere)
+FIN

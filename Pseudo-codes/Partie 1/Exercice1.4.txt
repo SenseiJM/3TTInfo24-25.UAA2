@@ -1,0 +1,11 @@
+Algorithme Exercice1.4
+
+Variable a, b, c, d, e : Entier
+
+DEBUT
+    a <-- 8 MOD 3
+    b <-- 4 + a
+    c <-- b * a
+    d <-- (c - a) * b
+    e <-- ((a + 7) * (d DIV a))
+FIN

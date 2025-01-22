@@ -1,0 +1,9 @@
+Algorithme Exercice1.2
+
+Variable nombre1, nombre2 : Entier
+
+DEBUT
+    nombre1 <-- 16
+    nombre2 <-- 22
+    Ecrire(nombre1 + nombre2)
+FIN

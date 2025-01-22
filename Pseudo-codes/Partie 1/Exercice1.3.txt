@@ -1,0 +1,14 @@
+Algorithme Exercice1.3
+
+Variable nom, prenom : Chaine
+Variable age : Entier
+
+DEBUT
+    Ecrire("Quel est votre prénom ?")
+    Lire(prenom)
+    Ecrire("Quel est votre nom ?")
+    Lire(nom)
+    Ecrire("Quel est votre âge ?")
+    Lire(age)
+    Ecrire("Bonjour " + prenom + " " + nom + " ! Vous avez " + age + " ans.")
+FIN
