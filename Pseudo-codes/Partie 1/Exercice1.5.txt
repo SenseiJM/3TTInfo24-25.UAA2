@@ -1,0 +1,11 @@
+Algorithme Exercice1.5
+
+Constante PRIX_ARTICLE = 12
+Variable quantite : Entier
+
+DEBUT
+    Ecrire("Le prix de l'article est " + PRIX_ARTICLE + " €")
+    Ecrire("Combien d'articles souhaitez-vous commander ?")
+    Lire(quantite)
+    Ecrire("Le total de votre commande est de " + (PRIX_ARTICLE * quantite) + " €")
+FIN
