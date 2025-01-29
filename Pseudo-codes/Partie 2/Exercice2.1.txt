@@ -1,0 +1,16 @@
+Algorithme Exercice 2.1
+
+Variable genre : Chaine
+
+DEBUT
+    Ecrire("Quel est votre genre ? (Homme/Femme)")
+    Lire(genre)
+
+    SI (genre == "Homme") ALORS
+        Ecrire("Bonjour Monsieur !")
+    SINONSI (genre == "Femme")
+        Ecrire("Bonjour Madame !")
+    SINON
+        Ecrire("Bonjour !")
+    FINSI
+FIN

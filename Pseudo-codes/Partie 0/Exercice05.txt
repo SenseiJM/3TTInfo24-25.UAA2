@@ -1,0 +1,21 @@
+Algorithme Exercice05
+
+Variable secondesLues, s, m, h, j : Entier
+
+DEBUT
+    Ecrire("Donnez un nombre en secondes : ")
+    Lire(secondesLues)
+
+    //On garde toutes les secondes en-dessous de 60
+    s <-- secondesLues MOD 60
+
+    //On garde les minutes en-dessous de 60
+    m <-- ((secondesLues - s) DIV 60) MOD 60
+
+    //On garde les heures en-dessous de 24
+    h <-- (((secondesLues - s) DIV 60) DIV 60) MOD 24
+
+    j <-- (((secondesLues - s) DIV 60) DIV 60) DIV 24
+
+    Ecrire(secondesLues + " secondes valent " + j + " jours " + h + " heures " + m + " minutes et " + s + " secondes.")
+FIN
