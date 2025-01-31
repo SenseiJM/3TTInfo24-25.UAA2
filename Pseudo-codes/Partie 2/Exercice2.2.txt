@@ -1,0 +1,14 @@
+Algorithme Exercice 2.2
+
+Variable annee : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer une année : ")
+    Lire(annee)
+
+    SI (((annee MOD 400) == 0) || (((annee MOD 4) == 0) && ((annee MOD 100) != 0))) ALORS
+        Ecrire("Votre année " + annee + " est bissextile.")
+    SINON
+        Ecrire("Votre année " + annee + " n'est pas bissextile.")
+    FINSI
+FIN
