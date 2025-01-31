@@ -1,0 +1,28 @@
+Algorithme Exercice2.3
+
+Variable cote1, cote2, cote3, cote4, angle1, angle2, angle3, angle4 : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer l'amplitude du premier angle : ")
+    Lire(angle1)
+    Ecrire("Veuillez entrer l'amplitude du deuxième angle : ")
+    Lire(angle2)
+    Ecrire("Veuillez entrer l'amplitude du troisième angle : ")
+    Lire(angle3)
+    Ecrire("Veuillez entrer l'amplitude du quatrième angle : ")
+    Lire(angle4)
+    Ecrire("Veuillez entrer la longueur du premier côté : ")
+    Lire(cote1)
+    Ecrire("Veuillez entrer la longueur du deuxième côté : ")
+    Lire(cote2)
+    Ecrire("Veuillez entrer la longueur du troisième côté : ")
+    Lire(cote3)
+    Ecrire("Veuillez entrer la longueur du quatrième côté : ")
+    Lire(cote4)
+
+    SI ((cote1 == cote2) && (cote2 == cote3) && (cote3 == cote4) && (cote4 == cote1) && ((angle1 == 90) && (angle2 == 90) && (angle3 == 90) && (angle4 == 90))) ALORS
+        Ecrire("La forme que vous décrivez est un carré ! Hourrah !")
+    SINON
+        Ecrire("La forme que vous décrivez n'est pas un carré ! Snif...")
+    FINSI
+FIN
