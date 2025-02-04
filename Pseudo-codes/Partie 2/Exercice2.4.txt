@@ -1,0 +1,32 @@
+Algorithme Exercice2.4
+
+Variable estPret, estVide : Booléen
+Variable nbBalles : Entier
+Variable reponsePret : Chaine
+
+DEBUT
+    //Récupéré par le robot
+    nbBalles <-- 80
+
+    SI (nbBalles == 0) ALORS
+        estVide <-- true
+        Ecrire("Aucune balle restante...")
+    SINON
+        estVide <-- false
+    FINSI
+
+    SI (estVide == false) ALORS
+        Ecrire("Le joueur est-il prêt ?")
+        Lire(reponsePret)
+
+        SI (reponsePret == "oui") ALORS
+            estPret <-- true
+        SINON
+            Ecrire("Veuillez redémarrer le programme lorsque vous êtes prêt.")
+        FINSI
+
+        SI (estPret == true) ALORS
+            //LancerBalles()
+        FINSI
+    FINSI
+FIN
