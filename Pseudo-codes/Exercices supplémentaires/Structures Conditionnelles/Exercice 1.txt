@@ -1,0 +1,16 @@
+Algorithme Exercice 1
+
+Variable nombre1, nombre2 : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer un premier nombre : ")
+    Lire(nombre1)
+    Ecrire("Veuillez entrer un deuxième nombre : )
+    Lire(nombre2)
+
+    SI (nombre1 == nombre2) ALORS
+        Ecrire("Ces nombres sont égaux !")
+    SINON
+        Ecrire("Ces nombres ne sont pas égaux !")
+    FINSI
+FIN

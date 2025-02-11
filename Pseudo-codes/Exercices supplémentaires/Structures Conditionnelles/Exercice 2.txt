@@ -1,0 +1,13 @@
+Algorithme Exercice 2 - Nombre pair
+
+Variable nombre : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer un nombre : ")
+    Lire(nombre)
+    SI (nombre MOD 2 == 0) ALORS
+        Ecrire(nombre + " est pair !")
+    SINON
+        Ecrire(nombre + " est impair !")
+    FINSI
+FIN
