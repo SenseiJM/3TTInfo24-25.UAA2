@@ -1,0 +1,25 @@
+Algorithme Exercice 4 - Maximum parmi 3 nombres
+
+Variable nb1, nb2, nb3 : Entier
+
+DEBUT
+    Ecrire("Entrez un premier nombre : ")
+    Lire(nb1)
+    Ecrire("Entrez un deuxième nombre : ")
+    Lire(nb2)
+    Ecrire("Entrez un troisième nombre : ")
+    Lire(nb3)
+
+    SI (nb1 > nb2) ALORS
+        SI (nb1 > nb3) ALORS
+            Ecrire("Le premier nombre est le plus grand.")
+        SINON
+            Ecrire("Le troisième nombre est le plus grand.")
+        FINSI
+    SINONSI (nb2 > nb3) ALORS
+        Ecrire("Le deuxième nombre est le plus grand.")
+    SINON
+        Ecrire("Le troisième nombre est le plus grand.")
+    FINSI
+
+FIN

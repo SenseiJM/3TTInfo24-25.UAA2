@@ -1,0 +1,14 @@
+Algorithme Exercice 3 - Age pour voter
+
+Variable age : Entier
+
+DEBUT
+    Ecrire("Quel est votre âge ? ")
+    Lire(age)
+
+    SI (age >= 18) ALORS
+        Ecrire("Vous pouvez voter !")
+    SINON
+        Ecrire("Vous ne pouvez pas voter...")
+    FINSI
+FIN
