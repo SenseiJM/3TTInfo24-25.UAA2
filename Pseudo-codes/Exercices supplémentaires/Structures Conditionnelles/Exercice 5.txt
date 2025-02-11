@@ -1,0 +1,14 @@
+Algorithme Exercice 5 - Consonne ou voyelle
+
+Variable lettre : Caractere
+
+DEBUT
+    Ecrire("Veuillez entrer une lettre : ")
+    Lire(lettre)
+
+    SI (lettre == 'a') || (lettre == 'e') || (lettre == 'i') || (lettre == 'o') || (lettre == 'u') || (lettre == 'y') ALORS
+        Ecrire("Ceci est une voyelle")
+    SINON
+        Ecrire("Ceci est une consonne")
+    FINSI
+FIN
