@@ -1,0 +1,20 @@
+Algorithme Exercice 7
+
+Variable cote1, cote2, cote3 : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer une longueur pour le côté 1 : ")
+    Lire(cote1)
+    Ecrire("Veuillez entrer une longueur pour le côté 2 : ")
+    Lire(cote2)
+    Ecrire("Veuillez entrer une longueur pour le côté 3 : ")
+    Lire(cote3)
+    
+    SI ((cote1 == cote2) && (cote2 == cote3)) ALORS
+        Ecrire("Le triangle est équilatéral.")
+    SINONSI ((cote1 == cote2) || (cote2 == cote3) || (cote3 == cote1)) ALORS
+        Ecrire("Le triangle est isocèle.")
+    SINON
+        Ecrire("Le triangle est quelconque.")
+    FINSI
+FIN

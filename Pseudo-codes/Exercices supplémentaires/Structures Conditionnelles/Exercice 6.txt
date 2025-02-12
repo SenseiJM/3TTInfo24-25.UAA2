@@ -1,0 +1,18 @@
+Algorithme Exercice 6
+
+Variable choix : Entier
+//POSITIVE ATTITUDE !!!
+DEBUT
+    Ecrire("Entrer le numéro d'un mois : ")
+    Lire(choix)
+
+    SI (choix == 2) ALORS
+        Ecrire("Le mois de février compte 28 jours.")
+    SINONSI ((choix == 1) || (choix == 3) || (choix == 5) || (choix == 7) || (choix == 8) || (choix == 10) || (choix == 12)) ALORS
+        Ecrire("Ce mois contient 31 jours.")
+    SINONSI ((choix == 4) || (choix == 6) || (choix == 9) || (choix == 11)) ALORS
+        Ecrire("Ce mois contient 30 jours.")
+    SINON
+        Ecrire("Ce mois n'existe pas.")
+    FINSI
+FIN
