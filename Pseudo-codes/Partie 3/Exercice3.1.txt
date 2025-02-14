@@ -1,0 +1,14 @@
+Algorithme Exercice3.1 - Table de Multiplication de 2
+
+Constante MULTIPLICATEUR = 2
+Variable i : Entier
+
+DEBUT
+
+    i <-- 0
+    TANTQUE i < 11 FAIRE
+        Ecrire(i + "*" + MULTIPLICATEUR + "=" + (i * MULTIPLICATEUR))
+        i <-- i + 1
+    FINTQ
+
+FIN

@@ -1,0 +1,20 @@
+Algorithme Exercice3.2 - Lanceur de balles de tennis avec boucles
+
+Variable stockBalles : Entier
+Variable pret : Booleen
+
+DEBUT
+
+    stockBalles <-- 15
+
+    TANTQUE stockBalles != 0 FAIRE
+        Ecrire("Le joueur est-il prêt ?")
+        Lire(pret)
+
+        SI pret ALORS
+            LancerBalles()
+            stockBalles <-- stockBalles - 1
+        FINSI
+    FINTQ
+
+FIN
