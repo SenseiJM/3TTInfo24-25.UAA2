@@ -25,6 +25,7 @@ DEBUT
     SINONSI (operateur == '/') ALORS
         SI (nb2 == 0) ALORS
             Ecrire("La division par 0 n'est pas supportée...")
+            aCalcule <-- False
         SINON
             resultat <-- nb1 / nb2
             aCalcule <-- True
