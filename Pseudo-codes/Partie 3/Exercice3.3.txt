@@ -1,0 +1,15 @@
+Algorithme Exercice3.3 - Tables de multiplication de 1 à 9
+
+Variable i, m :  Entier
+
+DEBUT
+    m <-- 1
+    TANTQUE m < 10 FAIRE
+        i <-- 0
+        TANTQUE i < 11 FAIRE
+            Ecrire(i + "*" + m + " = " + (i * m))
+            i <-- i + 1
+        FINTQ
+        m <-- m + 1
+    FINTQ
+FIN
