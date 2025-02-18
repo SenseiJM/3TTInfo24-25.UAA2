@@ -1,0 +1,21 @@
+Algorithme Exercice 3.4 - Le juste prix
+
+Variable justePrix, proposition : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer la valeur du juste prix :")
+    Lire(justePrix)
+    Ecrire("Proposez un prix : ")
+    Lire(proposition)
+
+    TANTQUE proposition != justePrix FAIRE
+        SI justePrix < proposition ALORS
+            Ecrire("C'est moins !")
+            Lire(proposition)
+        SINONSI justePrix > proposition ALORS
+            Ecrire("C'est plus !")
+            Lire(proposition)
+        FINSI
+    FINTQ
+    Ecrire("Félicitations ! Vous avez trouvé le juste prix !")
+FIN
