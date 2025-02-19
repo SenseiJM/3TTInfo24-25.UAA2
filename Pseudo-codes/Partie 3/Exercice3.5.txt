@@ -1,0 +1,92 @@
+Algorithme Exercice3.5
+
+Constante STOCK_MAXIMUM = 20
+
+Variable stockSnickers, stockMms, stockLion, stockBounty, stockBueno, stockBalisto, choixUtilisateur : Entier
+Variable aServiSnack, veutAcheterSnack : Booléen
+
+DEBUT
+
+    stockBalisto <-- STOCK_MAXIMUM
+    stockBounty <-- STOCK_MAXIMUM
+    stockBueno <-- STOCK_MAXIMUM
+    stockLion <-- STOCK_MAXIMUM
+    stockMms <-- STOCK_MAXIMUM
+    stockSnickers <-- STOCK_MAXIMUM
+
+    veutAcheterSnack <-- true
+    TANTQUE veutAcheterSnack FAIRE
+
+        Ecrire("Bienvenue. Veuillez sélectionner votre snack à l'aide du numéro correspondant : ")
+        Ecrire("1. Snickers")
+        Ecrire("2. M&M's")
+        Ecrire("3. Lion")
+        Ecrire("4. Bounty")
+        Ecrire("5. Kinder Bueno")
+        Ecrire("6. Balisto")
+        Lire(choixUtilisateur)
+
+        SI (choixUtilisateur == 1) ALORS
+            SI (stockSnickers == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockSnickers <-- stockSnickers - 1
+                aServiSnack <-- true
+            FINSI
+        SINONSI (choixUtilisateur == 2) ALORS
+            SI (stockMms == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockMms <-- stockMms - 1
+                aServiSnack <-- true
+            FINSI
+        SINONSI (choixUtilisateur == 3) ALORS
+            SI (stockLion == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockLion <-- stockLion - 1
+                aServiSnack <-- true
+            FINSI
+        SINONSI (choixUtilisateur == 4) ALORS
+            SI (stockBounty == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockBounty <-- stockBounty - 1
+                aServiSnack <-- true
+            FINSI
+        SINONSI (choixUtilisateur == 5) ALORS
+            SI (stockBueno == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockBueno <-- stockBueno - 1
+                aServiSnack <-- true
+            FINSI
+        SINONSI (choixUtilisateur == 6) ALORS
+            SI (stockBalisto == 0) ALORS
+                Ecrire("Stock épuisé...")
+            SINON
+                ServirSnacks() //Méthode qui permet de servir le snack
+                stockBalisto <-- stockBalisto - 1
+                aServiSnack <-- true
+            FINSI
+        FINSI
+
+        SI (aServiSnack) ALORS
+            Ecrire("Merci pour votre achat, à bientôt !")
+        SINON
+            Ecrire("Achat impossible, veuillez réessayer...")
+        FINSI
+        
+        Ecrire("Souhaitez-vous acheter un nouveau snack ? ")
+        Lire(veutAcheterSnack)
+
+    FINTQ
+
+    //Répéter
+
+FIN

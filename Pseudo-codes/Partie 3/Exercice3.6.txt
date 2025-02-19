@@ -1,0 +1,48 @@
+Algorithme Exercice3.6
+
+Variable nb1, nb2 : Entier
+Variable operateur : Caractere
+Variable resultat : Reel
+Variable aCalcule, veutCalculer : Booleen
+
+DEBUT
+
+    veutCalculer <-- True
+    TANTQUE veutCalculer FAIRE
+        
+        Ecrire("Entrer un premier nombre : ")
+        Lire(nb1)
+        Ecrire("Entrer un opérateur (+, -, *, /) : ")
+        Lire(operateur)
+        Ecrire("Entrer un deuxième nombre : ")
+        Lire(nb2)
+
+        SI (operateur == '+') ALORS
+            resultat <-- nb1 + nb2
+            aCalcule <-- True
+        SINONSI (operateur == '-') ALORS
+            resultat <-- nb1 - nb2
+            aCalcule <-- True
+        SINONSI (operateur == '*') ALORS
+            resultat <-- nb1 * nb2
+            aCalcule <-- True
+        SINONSI (operateur == '/') ALORS
+            SI (nb2 == 0) ALORS
+                Ecrire("La division par 0 n'est pas supportée...")
+                aCalcule <-- False
+            SINON
+                resultat <-- nb1 / nb2
+                aCalcule <-- True
+            FINSI
+        FINSI
+
+        SI aCalcule ALORS
+            Ecrire(nb1 + " " + operateur + " " + nb2 + " = " + resultat)
+        FINSI
+
+        Ecrire("Voulez-vous faire un nouveau calcul ?")
+        Lire(veutCalculer)
+
+    FINTQ
+
+FIN
