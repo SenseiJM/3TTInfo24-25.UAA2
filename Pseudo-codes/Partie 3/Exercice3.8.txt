@@ -1,0 +1,57 @@
+Algorithme Exercice 3.8 - Le juste prix ENCORE amélioré !
+
+Variable justePrix, proposition, choixDifficulte : Entier
+Variable veutRejouer : Booleen
+Variable reponseRejouer : Chaine
+
+Constante VALEUR_MIN : 1
+Constante VALEUR_MAX_FACILE : 10
+Constante VALEUR_MAX_MOYEN : 100
+Constante VALEUR_MAX_DIFFICILE : 1000
+
+DEBUT
+
+    veutRejouer <-- true
+    TANTQUE veutRejouer FAIRE
+        Ecrire("Choisissez votre difficulté : ")
+        Ecrire("1.Facile (1-" + VALEUR_MAX_FACILE + ")")
+        Ecrire("2.Moyen (1-" + VALEUR_MAX_MOYEN + ")")
+        Ecrire("3.Difficile (1-" + VALEUR_MAX_DIFFICILE + ")")
+        Lire(choixDifficulte)
+
+        SI choixDifficulte == 1 ALORS
+            justePrix <-- NombreAleatoire(0, VALEUR_MAX_FACILE)
+        SINONSI choixDifficulte == 2 ALORS
+            justePrix <-- NombreAleatoire(0, VALEUR_MAX_MOYEN)
+        SINONSI choixDifficulte == 3 ALORS
+            justePrix <-- NombreAleatoire(0, VALEUR_MAX_DIFFICILE)
+        SINON
+            Ecrire("La valeur n'est pas dans les choix proposés. Veuillez réessayer.")
+        FINSI
+
+        SI choixDifficulte >= 1 || choixDifficulte <= 3 ALORS
+            Ecrire("Proposez un prix : ")
+            Lire(proposition)
+            TANTQUE justePrix != proposition FAIRE
+                SI justePrix < proposition ALORS
+                    Ecrire("C'est moins !")
+                SINONSI justePrix > proposition ALORS
+                    Ecrire("C'est plus !")
+                FINSI
+                Ecrire("Proposez un prix : ")
+                Lire(proposition)
+            FINTQ
+            Ecrire("C'est gagné !")
+        FINSI
+
+        Ecrire("Voulez-vous rejouer ?")
+        Lire(reponseRejouer)
+        SI reponseRejouer == "oui" ALORS
+            veutRejouer <-- true
+        SINON
+            veutRejouer <-- false
+        FINSI
+
+    FINTQ
+
+FIN
