@@ -1,0 +1,13 @@
+Algorithme Compte à rebours
+
+Variable nombreLu : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer un nombre : ")
+    Lire(nombreLu)
+
+    TANTQUE nombreLu >= 0 FAIRE
+        Ecrire(nombreLu)
+        nombreLu <-- nombreLu - 1
+    FINTQ
+FIN

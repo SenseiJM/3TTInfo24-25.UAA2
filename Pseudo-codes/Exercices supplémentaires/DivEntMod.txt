@@ -1,0 +1,19 @@
+Algorithme Division Entière, Modulo, Division
+
+Variable nombreLu, nombreLu2 : Entier
+
+DEBUT
+    Ecrire("Veuillez entrer un nombre : ")
+    Lire(nombreLu)
+    Ecrire("Veuillez entrer un deuxième nombre : ")
+    Lire(nombreLu2)
+
+    SI nombreLu2 == 0 ALORS
+        Ecrire("Le deuxième nombre ne peut pas être 0")
+    SINON
+        Ecrire("Voici les résultats pour " + nombreLu + " et " + nombreLu2 + " : ")
+        Ecrire("Division Entière : " + (nombreLu DIV nombreLu2))
+        Ecrire("Modulo : " + (nombreLu MOD nombreLu2))
+        Ecrire("Division : " + (nombreLu / nombreLu2))
+    FINSI
+FIN
