@@ -26,7 +26,7 @@ if login_entre == login_correct :
         nombre_tentatives = nombre_tentatives - 1
     
     #Si l’utilisateur se trompe de mot de passe trois fois, afficher le message « Vous vous êtes trompé trop souvent de mot de passe. Compte verrouillé. »
-    if (nombre_tentatives == 0) and (mot_de_passe_correct != mot_de_passe_correct) :
+    if (nombre_tentatives == 0) and (mot_de_passe_entre != mot_de_passe_correct) :
         print("Vous vous êtes trompé trop souvent de mot de passe. Compte verrouillé.")
     #Si le bon mot de passe est entré, afficher le message « Bienvenue ! »
     elif mot_de_passe_correct == mot_de_passe_entre :
