@@ -1,0 +1,35 @@
+Algorithme Cinema
+
+Variable nbBilletsAAcheter, nbBilletsVendus, age : Entier
+Variable montantTotal : Reel
+
+DEBUT
+
+    montantTotal <-- 0
+    nbBilletsVendus <-- 0
+    Ecrire("Combien de billets voulez-vous acheter ?")
+    Lire(nbBilletsAAcheter)
+
+    TANTQUE (nbBilletsAAcheter != nbBilletsVendus) FAIRE
+        Ecrire("Quel est l'âge pour ce billet ?")
+        Lire(age)
+
+        SI age < 12 ALORS
+            montantTotal <-- montantTotal + 5
+        SINONSI age > 18 ALORS
+            montantTotal <-- montantTotal + 10
+        SINON
+            montantTotal <-- montantTotal + 7
+        FINSI
+
+        nbBilletsVendus <-- nbBilletsVendus + 1
+
+    FINTQ
+
+    SI nbBilletsVendus >= 10 ALORS
+        montantTotal <-- montantTotal * 0,75
+    FINSI
+
+    Ecrire(montantTotal)
+
+FIN
